@@ -1,0 +1,30 @@
+
+
+.logo {
+	@extend %link;
+
+	display: inline-block;
+
+	color: $color-logo-blue;
+
+	font-family: Raleway, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.03em;
+	font-size: 24px;
+	line-height: 1.16;
+
+	@media screen and (min-width:$desktop-fixed) {
+	font-size: 26px;
+	line-height: 1.2;
+	}
+}
+
+.page-header__logo {
+	color: $color-logo-black;
+}
+.footer-info__logo {
+	color: $color-logo-white;
+	// margin-bottom: 20px;
+}
+

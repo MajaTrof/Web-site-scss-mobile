@@ -1,0 +1,31 @@
+.page-footer {
+    @extend %section;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  background: $color-background-dark-gray;
+
+  @media screen and (min-width: $tablet-fixed) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.page-footer__container {
+  @media  screen and (min-width: $desktop-fixed) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+.page-footer__flex {
+  @media screen and (min-width: $tablet-fixed) {
+    display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-right: auto;
+  }
+}
+
+

@@ -1,0 +1,85 @@
+.footer-form {
+  @media screen and (min-width: $desktop-fixed) {
+  display: flex;
+
+  align-items: center;
+;}
+}
+
+.footer-email-input {
+  @media screen and (min-width: $tablet-fixed) and (max-width: $tablet-max) {
+    padding-top: 60px;}  
+}
+
+.footer-form__input {
+width: 100%;
+height: 50px;
+padding: 0 16px;
+margin-bottom: 20px;
+background-color: transparent;
+  border: 1px solid $color-border-input;
+  border-radius: 4px;
+  color: $color-text-white;
+
+  @media screen and (min-width: $tablet-fixed) {
+width: 450px;}
+@media screen and (min-width: $desktop-fixed) {
+  width: 358px;
+margin-bottom: 0;
+margin-right: 12px;}
+
+  &::placeholder {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: $color-text-translucent;
+  }
+
+  &:focus,
+  &:focus-visible
+   {
+    outline: none;
+    border: 1px solid $color-text-white;
+  }
+}
+
+.footer-form__button {
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 28px;
+ 
+
+  background-color: $color-button;
+  border: 1px solid $color-button-border;
+  box-shadow: $button-box-shadow;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  color: $color-text-white;
+  cursor: pointer;
+
+  transition: background-color 250ms $timing-function, border 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $color-button-hover;
+    border: 1px solid $color-button-border-hover;
+
+    font-family: inherit;
+  }
+}
+
+.footer-form__text {
+  margin-right: 10px;
+}

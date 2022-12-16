@@ -1,0 +1,49 @@
+// .page-portfolio {
+//   @extend %section;
+
+//   &__title {
+//     @extend %visually-hidden;
+//   }
+// }
+
+// .portfolio-button {
+//   @extend %flex;
+//   @extend %list;
+//   margin-left: auto;
+//   margin-right: auto;
+
+//   & > .portfolio-button__item + .portfolio-button__item {
+//     margin-left: 8px;
+//   }
+// }
+
+// .portfolio-button__list {
+//   @extend %text;
+//   padding: 6px 22px;
+//   cursor: pointer;
+
+//   color: $color-text-black;
+//   background-color: $color-button-gray;
+//   border: 1px solid $color-button-gray;
+//   border-radius: 4px;
+
+//   text-align: center;
+//   font-family: inherit;
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.6;
+//   transition: $transition-bc, $transition-border, $transition-color;
+
+//   &:hover,
+//   &:focus,
+//   &--currrent {
+//     background-color: $color-button;
+//     color: $color-text-white;
+//     border: 1px solid $color-button;
+//     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+//       0px 2px 2px rgba(0, 0, 0, 0.12);
+//     border-radius: 4px;
+
+//     font-family: inherit;
+//   }
+// }

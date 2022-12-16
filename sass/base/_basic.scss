@@ -1,0 +1,36 @@
+body {
+  background: $color-background-white;
+
+  font-family: $text-font, sans-serif;
+  font-weight: 400;
+  letter-spacing: $letter-spacing;
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+
+.container {
+  max-width: 1200px; 
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+@media screen and (min-width: 480px) {
+  width: 480px;
+} ;
+@media screen and (min-width: 768px) {
+  width: 768px;
+}  
+@media screen and (min-width: 1200px) {
+  width: 1200px;
+}  
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

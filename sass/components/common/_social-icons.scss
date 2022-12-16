@@ -1,0 +1,32 @@
+.social-icons {
+  @extend %list;
+  @extend %flex;
+
+  & > .social-icons__item + .social-icons__item {
+    margin-left: 10px;
+  }
+  & > .social-icons__item.last-child {
+    margin-right: 0;
+  }
+}
+
+.social-icons__item {
+  @extend %flex;
+  width: 44px;
+  height: 44px;
+}
+
+.social-icons__link {
+  @extend %flex;
+  @extend %link;
+  width: 44px;
+  height: 44px;
+  background-position: 50% 50%;
+  border-radius: 50%;
+
+  transition: $transition-bc, $transition-color;
+}
+
+.social-icons__icon {
+  @extend %link;
+}

@@ -1,0 +1,36 @@
+@media screen and (max-width: $mobile-max) {
+
+.social__header {
+    margin: 0;
+  padding: 0;
+  list-style: none;
+    display: flex;
+}
+
+
+.social__link {
+    text-decoration: none;
+    font-style: normal;
+    padding: 0;
+  margin: 0;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    
+    color: $color-text-hover;
+}
+
+.social__item:not(:last-child) {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #21212133;}
+}
+
+@media screen and (min-width: $tablet-fixed) 
+{
+    .social {
+    display: none;}
+}

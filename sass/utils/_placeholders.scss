@@ -1,0 +1,178 @@
+%text {
+  padding: 0;
+  margin: 0;
+}
+
+%list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+%section {
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+@media screen and (min-width: 768px) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+}
+
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+%button-submit {
+  display: inline-block;
+  cursor: pointer;
+  background-color: $color-button;
+  border: $button-border;
+  border-radius: 4px;
+  box-shadow: $button-box-shadow;
+
+  color: $color-text-white;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  transition: $transition-bc, $transition-border;
+}
+
+%button-submit-hover {
+  background-color: $color-button-hover;
+  border: $button-border-hover;
+
+  font-family: inherit;
+}
+
+%title-h1 {
+  @extend %text;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+
+%title-h2 {
+  @extend %text;
+  color: $color-text-black;
+
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.03em;
+font-size: 28px;
+line-height: 1.17;
+
+@media screen and (min-width: 1200px) {
+  font-size: 36px;
+  line-height: 1.2;
+}
+}
+
+%title-modal {
+  @extend %text;
+  color: $color-text-black;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+%title-h3 {
+  @extend %text;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: $color-text-black;
+}
+
+%text-500 {
+  @extend %text;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  
+  letter-spacing: 0.02em;
+}
+
+%text-500-mobile {
+  @extend %text;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: start;
+  letter-spacing: 0.02em;
+}
+
+%text-500-16 {
+  @extend %text;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $color-text-black;
+}
+
+%text-400 {
+  @extend %text;
+  font-size: 14px;
+  line-height: 1.72;
+  letter-spacing: 0.03em;
+  color: $color-text-gray;
+}
+
+%text-400-16 {
+  @extend %text;
+
+  font-size: 16px;
+  line-height: 1.72;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+%text-modal {
+  @extend %text;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+%button {
+  padding: 0;
+  margin: 0;
+}

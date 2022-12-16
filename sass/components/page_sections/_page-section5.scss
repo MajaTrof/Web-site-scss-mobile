@@ -1,0 +1,79 @@
+.section5 {
+  @extend %section;
+
+  &__title {
+    @extend %title-h2;
+  }
+
+  &__list {
+    @extend %list;
+   
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+
+    @media screen and (min-width: $desktop-fixed) {
+        padding-top: 50px;
+    }
+  }
+}
+
+ .section5__item {
+    flex-basis: calc((100% - 30px) / 2);
+        
+      @media screen and  (max-width: $mobile-max) {
+        &:nth-child(odd) {
+        margin-right: 30px;
+      }
+       &:nth-last-child(n+3) {
+         margin-bottom: 30px;
+      }
+      }
+    
+      @media screen and (min-width: $tablet-fixed) and (max-width: $tablet-max) {
+        flex-basis: calc((100% - 60px) / 3);
+        margin-right: 30px;
+        margin-bottom: 30px;
+
+        &:nth-child(3n) {
+        margin-right: 0;
+      }
+      &:nth-last-child(-n+3) {
+         margin-bottom: 0;
+      }
+      }
+    @media screen and (min-width: $desktop-fixed) {
+      flex-wrap: nowrap;
+      flex-basis: calc((100% - 150px) / 6);
+   
+    &:nth-last-child(n+2) {
+      margin-right: 30px;
+    } }
+    }
+
+.section5__link {
+  @extend %link;
+//   @extend %flex;
+display: block;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: $color-icons-rest;
+  border: 1px solid $color-icons-rest;
+  border-radius: 4px;
+
+  transition: $transition-color, $transition-border;
+
+  &:hover,
+  &:focus {
+    color: $color-icons-hover;
+    border: 1px solid $color-icons-hover;
+  }
+}
+
+.section5__client {
+  fill: currentColor;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

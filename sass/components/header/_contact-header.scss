@@ -1,0 +1,84 @@
+.contacts {
+  display: block;
+
+  @media screen and (max-width: $mobile-max) {
+    margin-bottom: 64px;
+  }
+}
+
+.contact-header {
+  @extend %list;
+
+  @media screen and (min-width: $desktop-fixed) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.contact-header__item {
+  text-align: start;
+
+  @media screen and (min-width: $desktop-fixed) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  &:first-child {
+    @media screen and (max-width: $mobile-max) {
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: $tablet-fixed) and (max-width: $tablet-max) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: $desktop-fixed) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.contact-header__link {
+  @extend %link;
+  @extend %flex;
+  justify-content: flex-start;
+  color: $color-text-gray;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $color-text-hover;
+    @media screen and (max-width: $mobile-max) {
+      font-size: 34px;
+    }
+  }
+
+  &--icon {
+    fill: currentColor;
+    @media screen and (max-width: $mobile-max) {
+      display: none;
+    }
+  }
+
+  &--text {
+    @extend %text;
+    display: inline;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    @media screen and (min-width: $tablet-fixed) {
+      font-size: 12px;
+
+      padding-left: 8px;
+    }
+  }
+  &--text:hover,
+  &--text:link {
+    color: $color-text-hover;
+
+    @media screen and (max-width: $mobile-max) {
+      font-size: 34px;
+    }
+  }
+}

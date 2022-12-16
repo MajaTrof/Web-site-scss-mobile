@@ -1,0 +1,106 @@
+.section4 {
+  @extend %section;
+  background: $color-background-light-gray;
+  text-align: center;
+
+  &__title {
+    @extend %title-h2;
+  }
+}
+
+.section4__list {
+    @extend %list;
+    margin-top: 30px;
+
+    @media screen and (min-width: $tablet-fixed) {
+       display: flex;
+       flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: $desktop-fixed) {
+        margin-top: 50px;
+      }
+    }
+  
+
+.team {
+  background: $color-background-white;
+  box-shadow: $card-box-shadow;
+  border-radius: $card-border-radius;
+  border-top: none;
+
+  @media screen and (max-width: $mobile-max) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+  }}
+
+  @media screen and (min-width: $tablet-fixed) and (max-width: $tablet-max) {
+    flex-basis: calc((100% - 2 * 15px) / 2);
+  
+   &:nth-child(2n+1) {
+    margin-right: 30px;
+   }
+   &:nth-last-child(n+3) {
+    margin-bottom: 30px;
+   }
+  }
+
+  @media screen and (min-width: $desktop-fixed) {
+    flex-basis: calc((100% - 90px) / 4);
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  }
+
+
+.social-icons {
+  @extend %list;
+
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    @extend %flex;
+    width: 44px;
+    height: 44px;
+  }
+
+  & > .social-icons__item + .social-icons__item {
+    margin-left: 10px;
+  }
+  & > .social-icons__item.last-child {
+    margin-right: 0;
+  }
+}
+
+
+.team__description {
+  padding-top: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: $desktop-fixed) {
+    padding-bottom: 30px;
+  }
+}
+.team__name {
+  @extend %text-500-16;
+}
+
+.team__position {
+  @extend %text-400-16;
+  color: $color-text-gray;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.team__description .social-icons__link {
+  @include social-icons__link--color($color-icons-rest, $color-background-white);
+}
+.social-icons__link:hover,
+.social-icons__link:focus {
+  background-color: $color-icons-hover;
+  fill: $color-icons-white;
+}

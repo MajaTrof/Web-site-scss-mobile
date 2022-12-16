@@ -1,0 +1,24 @@
+.footer-social {
+@media screen and (max-width: $mobile-max) {
+  padding-bottom: 60px;
+  margin-top: 60px;}
+
+  @media screen and (min-width: $tablet-fixed) and (max-width: $tablet-max) {
+  padding-left: 165px;} 
+  @media screen and (min-width: $desktop-fixed) {
+    padding-left: 70px;
+    margin-right: 93px;
+  }
+}
+
+
+.footer-social .social-icons__link {
+  @include social-icons__link--color($color-icons-white, $color-icons-background);
+}
+
+.social-icons__link:hover,
+.social-icons__link:focus {
+  background-color: $color-icons-hover;
+  fill: $color-icons-white;
+}
+

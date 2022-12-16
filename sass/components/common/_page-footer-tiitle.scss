@@ -1,0 +1,6 @@
+.page-footer__title {
+    @extend %title-h3;
+  
+    padding-bottom: 20px;
+    color: $color-text-white;
+  }

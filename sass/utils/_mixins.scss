@@ -1,0 +1,4 @@
+@mixin social-icons__link--color($color1, $color2) {
+    fill: $color1;
+    background-color: $color2;
+}

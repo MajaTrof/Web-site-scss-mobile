@@ -1,0 +1,37 @@
+
+@import './base/normalize';
+@import './utils/visually-hidden';
+@import './variables';
+@import './base/basic';
+@import './utils/placeholders';
+@import './utils/breakpoints';
+@import './utils/mixins';
+@import './components/common/social-icons';
+@import './components/header/header';
+@import './components/header/nav-header';
+@import './components/header/contact-header';
+@import './components/header/social-header';
+
+@import './components/common/logo';
+
+@import './components/footer/footer';
+@import './components/footer/footer-info';
+@import './components/footer/footer-social';
+@import './components/footer/footer-email-input';
+@import './components/common/_page-footer-tiitle';
+
+@import './components/page_sections/page-section1';
+@import './components/page_sections/page-section2';
+@import './components/page_sections/page-section3';
+@import './components/page_sections/page-section4';
+@import './components/page_sections/page-section5';
+@import './components/modal';
+@import './components/portfolio.scss/page-portfolio-button';
+@import './components/portfolio.scss/page-portfolio-container';
+
+
+
+
+
+
+
