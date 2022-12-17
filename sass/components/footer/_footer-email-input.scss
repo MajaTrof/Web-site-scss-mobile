@@ -1,14 +1,19 @@
 .footer-form {
+  @media screen and (min-width: $tablet-fixed) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  ;}
   @media screen and (min-width: $desktop-fixed) {
   display: flex;
-
   align-items: center;
 ;}
 }
 
 .footer-email-input {
   @media screen and (min-width: $tablet-fixed) and (max-width: $tablet-max) {
-    padding-top: 60px;}  
+    padding-top: 60px;
+  margin-bottom: 30px;}  
 }
 
 .footer-form__input {
@@ -22,7 +27,8 @@ background-color: transparent;
   color: $color-text-white;
 
   @media screen and (min-width: $tablet-fixed) {
-width: 450px;}
+width: 450px;
+}
 @media screen and (min-width: $desktop-fixed) {
   width: 358px;
 margin-bottom: 0;

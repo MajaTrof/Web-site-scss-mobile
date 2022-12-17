@@ -5,9 +5,7 @@
   background-color: $color-background-dark-gray;
   text-align: center;
 
-  @media screen and (min-width: $tablet-fixed) and (max-width: $tablet-max) {
-    margin-top: 48px;
-  }
+ 
   @media screen and (min-width: $desktop-fixed) {
     padding-top: 200px;
     padding-bottom: 200px;
